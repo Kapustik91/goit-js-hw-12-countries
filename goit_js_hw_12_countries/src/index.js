@@ -20,6 +20,8 @@ let searchQuery = '';
 refs.searchForm.addEventListener('input', debounce(onSearch, 500));
 
 function onSearch(e) {
+    let searchQuery = '';
+
     e.preventDefault();
     searchQuery = e.target.value;
 
